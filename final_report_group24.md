@@ -2,6 +2,8 @@
 
 ## Introduction
 
+The Breast Cancer Wisconsin Diagnostic Data Set consists of measurements of breast cancer cases that Dr. William H. Wolberg, a medical professional at the University of Wisconsin Hospitals, Madison, gathered to study trends between benign and malignant cancers. The data set has a diagnosis label of either benign (B) or malignant (M) for 569 cases in 32 data columns produced from digital images of an FNA of a breast lump. For more information, the dataset can be accessed by clicking [here](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29).
+
 A common and deadly disease, breast cancer affects countless people worldwide. Early detection of breast cancer is essential for successful treatment and a better prognosis. Our project examines and demonstrates the relationships between particular breast tumour characteristics and whether they are classified as malignant or benign. We hope to understand better the factors affecting benign or malignant tumour growth by identifying the most important ones. We're passionate about this topic because we want to improve early detection and look into how our findings might affect clinical decision-making. Ultimately, we hope patients, healthcare workers, and the medical community will significantly benefit from our efforts better to understand the connections between tumour traits and diagnosis.
 
 ### Team Members:
