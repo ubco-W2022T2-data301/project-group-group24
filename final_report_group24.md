@@ -132,9 +132,39 @@ We can thus conclude that it is possible to accurately identify whether a tumour
 
 **Out of all the data columns, which features seem to be the most highly correlated with the breast cancer's diagnosis, and can we define an approximate percentage probability of the breast cancer being benign or malignant based only on the values from these features?**
 
+To see the most highly correlated features with the Diagnosis being one way or the other, I used one row from a filtered correlation matrix heatmap. This heatmap only displayed correlations of more than 0.75 with the diagnosis:
+
+![Heat Map](images/rs_q1_1.png)
+
+This shows that the four most highly correlated values are *Mean Concave Points*, *Worst Radius*, *Worst Perimeter*, and *Worst Concave Points*, with a correlation value of 0.777, 0.776, 0.783, and 0.794 respectively. Then, using a pairplot, we can identify the characteristics of these columns' values when the diagnosis is, say, Benign:
+
+![Pair Plot](images/rs_q1_2.png)
+
+This shows that the tumor is categorized as "Benign" if:
+- The value of *Mean Concave Points* is in the approximate range (0, 0.085)
+- The value of *Worst Radius* is in the approximate range (0, 19)
+- The value of *Worst Perimeter* is in the approximate range (50, 125)
+- The value of *Worst Concave Points* is in the approximate range (0, 0.17)
+
+We used this information to create a filtered dataset with values following these constraints. Out of the 387 values in that dataset, 353 were Benign and only 34 were Malignant, which means our analysis was successful, and we can say with 91.21% certainty that a tumour is going to be Benign if it follows the above constraints. Here is a visualization of the breakdown of the new dataset:
+
+![Bar Graph](images/rs_q1_3.png)
+
 ### Question 2
 
 **Are there certain subsets of features that seem to be internally correlated? By extension, can we predict the values of other features in this subset given the value of just one?**
+
+To answer this question, we go back to our filtered heat map and idenify groups of variables that are highly correlated to each other. All of the groups hence formed could be linked to one another, thus forming the group:
+
+(Mean Radius, Worst Area, Worst Perimeter, Worst Radius, Mean Area, Mean Perimeter, Mean Concave Points)
+
+Each variable in this group is highly correlated to each other. That is, the value of one of these features is very likely to accurately indicate the value of another. We can see a simplified view of their correlations in this simplified heatmap:
+
+![Heat Map](images/rs_q2_1.png)
+
+As for the second part of the research question, we can use the following pairplot to examine the exact mathematical dependence of each feature on one another, and hence approximate the value of other feautres (using the equations shown below) with that of just one.
+
+![Pair Plot](images/rs_q2_2.png)
 
 [You can also find the full analysis here, including the code and data](https://github.com/ubco-W2022T2-data301/project-group-group24/blob/main/analysis/analysis2.ipynb).
 
