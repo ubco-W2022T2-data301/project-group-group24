@@ -27,6 +27,11 @@ A common and deadly disease, breast cancer affects countless people worldwide. E
 6. The regression plot below indicated that, in contrast to the 'mean' and 'worst' values, the 'se' values generally cluster around a common value, with just a handful of outliers straying from this trend. Additionally, the 'concave points' and 'concavity' variables demonstrate a high correlation, regardless of the specific statistic applied. The above heatmap further corroborated this substantial relationship, solidifying the close connection between these two variables.
    ![Count Image](images/yk-reg-plot.png)
 
+
+
+
+7. Based on the jointplot below, we can see that malignant cases have a higher mean radius value compared to benign cases. 
+
 ## Yash Kumar
 ### Question 1:
 
@@ -43,9 +48,22 @@ A common and deadly disease, breast cancer affects countless people worldwide. E
 
 **Based on the observations of several key features (for example radius and texture), can we accurately identify whether the tumour being benign or malignant?**
 
-### Question 2
+When we use a KDE counter plot to evaluate the provided jointplot, we can see that the contour plot for malignant tumours is more clustered and has a greater peak.
+Moreover, the counter plot is dispersed, with the peak for benign tumours being lower.
 
-**Are there any outlier values in the dataset? How do they affect our understanding of the relationship between key features and diagnosis?**
+
+Further examination of the marginal histograms reveals that, in contrast to benign tumours, the radius of malignant tumours is more skewed to the right (higher values).
+The mean texture of benign and malignant tumours can be observed in the same way. 
+
+ ![Joint Plot](images/mr-jointplot.png)
+
+ Furthermore, in the below plot,  we can see that benign tumours are dispersed across a wider range of values, but malignant tumours are grouped towards the lower end of the concavity and area features.
+This demonstrates the strong relationship between malignant tumours and benign tumours in terms of location and concavity. 
+
+![KDE Scatter Plot](images/mr-plt2.png)
+
+
+We can thus conclude that it is possible to accurately identify whether a tumour is benign or malignant through several key features. Furthermore, Malignant tumours seem to have a higher radius and area, and there are more rough and asymmetric. Through the given plots, we also discovered that It is not possible to detect the type of tumour by analyzing just the area and concavity features alone.
 
 [You can also find the full analysis here, including the code and data](https://github.com/ubco-W2022T2-data301/project-group-group24/blob/main/analysis/analysis1.ipynb).
 
