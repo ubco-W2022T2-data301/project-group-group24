@@ -170,4 +170,4 @@ As for the second part of the research question, we can use the following pairpl
 
 ## Conclusion
 
-FILLER TEXT
+That brings us to the end of our report. The Breast Cancer Wisconsin Diagnostic Data Set is a vast dataset that allowed us to observe the entries and analyze it in detail. We found several patterns and correlations in it which illustrates an undeniable link between a cancer's diagnosis being benign or malignant and the remaining features. Each team member analyzed these observations in a different manner and produced varying but equally important results. Working on this dataset alolowed us to understand not only the depth of the world of data science but also how crucial and effective data science methodologies can prove to be.
