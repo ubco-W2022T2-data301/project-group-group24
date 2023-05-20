@@ -25,12 +25,6 @@ The Breast Cancer Wisconsin (Diagnostic) Data Set consists of measurements of br
 - Rajveer Sodhi: I am a second year COSC major, DATA minor (also hoping to land a second minor in PSYO!). I love programming, movies, and astronomy!
 - Yash Kumar: A Data Science major passionate about machine learning, emerging technology, and cricket.
 
-## Images
-
-You should use this area to add a screenshot of an interesting plot or your dashboard.
-
-<img src ="images/test.png" width="100px">
-
 ## References
 
 Link to the Original Dataset: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
